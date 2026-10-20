@@ -1,1 +1,185 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empleos | Cosechalo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #1D4A2A;
+      --oscuro: #092D1C;
+      --lima: #A1C65D;
+      --fondo: #F4F7F3;
+      --texto: #143922;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: 'Inter', sans-serif;
+    }
+    header {
+      background: var(--oscuro);
+      color: white;
+      padding: 24px 20px 55px;
+    }
+    .contenedor {
+      max-width: 960px;
+      margin: auto;
+    }
+    .marca {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .marca small {
+      display: block;
+      color: var(--lima);
+      font-size: 11px;
+      font-weight: 400;
+    }
+    .hero { margin-top: 65px; }
+    .etiqueta {
+      color: var(--lima);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+      max-width: 650px;
+    }
+    .hero p {
+      color: #D4E2D7;
+      line-height: 1.7;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+    .opciones {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .tarjeta {
+      background: white;
+      border: 1px solid #DEE8DE;
+      border-radius: 18px;
+      padding: 28px;
+    }
+    .icono {
+      background: #E9F3E5;
+      border-radius: 12px;
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+    }
+    .tarjeta p {
+      color: #68776D;
+      line-height: 1.6;
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      font: 600 14px 'Inter', sans-serif;
+      cursor: pointer;
+    }
+    .principal {
+      background: var(--verde);
+      color: white;
+      border: none;
+    }
+    .secundario {
+      background: white;
+      color: var(--verde);
+      border: 1px solid var(--verde);
+    }
+    button:hover { opacity: .88; }
+    button:focus-visible {
+      outline: 3px solid var(--lima);
+      outline-offset: 3px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #68776D;
+      font-size: 12px;
+    }
+    @media(max-width: 650px) {
+      .opciones { grid-template-columns: 1fr; }
+      .hero { margin-top: 40px; }
+      .tarjeta { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="contenedor">
+    <div class="marca">
+      Cosechalo
+      <small>La rotonda digital</small>
+    </div>
+    <section class="hero">
+      <span class="etiqueta">EMPLEOS DEL AGRO</span>
+      <h1>El próximo paso en tu trabajo empieza acá.</h1>
+      <p>
+        Conectamos personas y oportunidades
+        laborales en el campo.
+      </p>
+    </section>
+  </div>
+</header>
+
+<main>
+  <h2>¿Qué estás buscando?</h2>
+
+  <div class="opciones">
+    <article class="tarjeta">
+      <div class="icono">👤</div>
+      <h3>Quiero trabajar</h3>
+      <p>
+        Explorá ofertas laborales y encontrá
+        tu próxima oportunidad.
+      </p>
+      <button class="principal"
+        onclick="alert('Próximamente: ofertas laborales')">
+        Buscar trabajo →
+      </button>
+    </article>
+
+    <article class="tarjeta">
+      <div class="icono">🚜</div>
+      <h3>Necesito personal</h3>
+      <p>
+        Publicá una búsqueda y encontrá
+        trabajadores para tu actividad.
+      </p>
+      <button class="secundario"
+        onclick="alert('Próximamente: publicar empleos')">
+        Publicar empleo →
+      </button>
+    </article>
+  </div>
+</main>
+
+<footer>
+  Simple, cercano y pensado para el agro.
+  <p>© 2026 Cosechalo</p>
+</footer>
+
+</body>
+</html>
+
